@@ -13,16 +13,6 @@ std::vector<int> get_numbers_from_file(std::string path) {
 	return vectorToReturn;
 }
 
-int get_summing_number(std::vector<int> numbersToCheck, int posCheckAgainst) {
-	int checkAgainst = numbersToCheck[posCheckAgainst];
-	for (int i = posCheckAgainst + 1; i < numbersToCheck.size(); i++) {
-		if (checkAgainst + numbersToCheck[i] == 2020) {
-			return numbersToCheck[i];
-		}
-	}
-	return -1;
-}
-
 std::vector<int> get_sums(std::vector<int> numbersToCheck, int posToCheck, int depth, std::vector<int> previousIndicies = {}) {
 	std::vector<int> toReturn;
 	if (depth == 1) {
