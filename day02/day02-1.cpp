@@ -34,8 +34,8 @@ std::vector<Password> get_passwords(std::string path) {
 }
 
 int is_valid(Password toCheck) {
-	const char *character = toCheck.character.c_str();
-	int occurrances = std::count(toCheck.password.begin(), toCheck.password.end(), character[0]);
+	char character = toCheck.character.c_str()[0];
+	int occurrances = std::count(toCheck.password.begin(), toCheck.password.end(), character);
 	if (occurrances < toCheck.min or occurrances > toCheck.max) {
 		return 0;
 	}
