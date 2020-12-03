@@ -39,8 +39,6 @@ int main() {
 	}
 
 	int answer = solution[0] * solution[1];
-
 	std::cout << std::to_string(answer) << std::endl;
-
 	return 0;
 }

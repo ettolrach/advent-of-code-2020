@@ -52,6 +52,5 @@ int main() {
 	}
 
 	std::cout << std::to_string(answer) << std::endl;
-
 	return 0;
 }
